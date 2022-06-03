@@ -14,12 +14,11 @@ export default function Home() {
     <div>
         <NavBar/>
         <Announcement/>
-        
-          <Slider/>
-          <SmlCtgCrds/>
-          <CategoryCard/>
-          <Products/>
-          <Footer/>
+        <Slider/>
+        <SmlCtgCrds/>
+        <CategoryCard/>
+        <Products/>
+        <Footer/>
      
     </div>
   )

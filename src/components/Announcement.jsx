@@ -10,11 +10,11 @@ const Container = styled.div`
   font-size: 14px;
   font-weight: 900;
   font-size: large;
-  margin-top: 65px;
+  margin-top: 64px;
 `;
 
 const Announcement = () => {
-  return <Container>Super Deal! Free Shipping on Orders Over $50</Container>;
+  return <Container>For Any Item You Buy You Have a Chance of Winning 100ps</Container>;
 };
 
 export default Announcement;

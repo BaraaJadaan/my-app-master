@@ -18,7 +18,7 @@ export default class SwipeToSlide extends Component {
     };
     return (
       <div style={{ margin: '50px' }}>
-        <h1 className="title">Categories</h1>
+        <h1 className="ti">Categories</h1>
         <div>
           <Slider {...settings}>
             {allCategories.map((image) => {
