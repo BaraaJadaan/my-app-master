@@ -1,5 +1,3 @@
-import Tooltip from '@mui/material/Tooltip';
-import Zoom from '@mui/material/Zoom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';

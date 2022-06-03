@@ -1,5 +1,4 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';

@@ -6,7 +6,6 @@ import Tooltip from '@mui/material/Tooltip';
 import Zoom from '@mui/material/Zoom';
 import { ShoppingCartCheckoutOutlined } from '@mui/icons-material';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { popularProducts } from './data';
 import {
   Link,
 } from "react-router-dom";

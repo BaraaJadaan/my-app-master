@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import "./Styles/NavBar.css";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -16,6 +16,10 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import Sidebar from './Sidebar';
+import {
+  Link,
+} from "react-router-dom";
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -24,11 +28,7 @@ const Search = styled('div')(({ theme }) => ({
   backgroundColor: 'rgb(255, 255, 255)',
   marginRight: theme.spacing(2),
   marginLeft: 0,
-  width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(3),
-    width: 'auto',
-  },
+  
 }));
 
 const SearchIconWrapper = styled('div')(({ theme }) => ({
@@ -38,7 +38,6 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
   pointerEvents: 'none',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center',
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({ 
@@ -47,13 +46,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
       width: '15ch',
-      '&:focus': {
-        width: '30ch',
-      },
-    },
   },
 }));
 
@@ -104,33 +97,23 @@ export default function NavBar() {
   );
 
   return (
-    <Box sx={{ boxShadow: 3, flexGrow: 1 }}>
       <AppBar style={{backgroundColor:"indigo"}}>
         <Toolbar variant="regular">
             <Sidebar/>
+            
           <Search>
             <SearchIconWrapper>
               <SearchIcon color='secondary'/>
-              <Typography
-            class="font5"
-            variant="h2"
-            component="h1"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
-          >
-            OneForAll
-          </Typography>
             </SearchIconWrapper>
             
-            <StyledInputBase 
-              
+            <StyledInputBase     
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
-          
+          <Link to={"/"}><h1 class="font5">OneForAll</h1></Link>
           <Box sx={{ flexGrow: 1 }} />
-          
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+
           
             <IconButton 
               size="large"
@@ -156,23 +139,8 @@ export default function NavBar() {
             >
               <AccountCircle />
             </IconButton>
-          </Box>
-          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="show more"
-              
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon fontSize="large"/>
-            </IconButton>
-          </Box>
         </Toolbar>
+        {renderMenu}
       </AppBar>
-      {renderMenu}
-
-    </Box>
   );
 }

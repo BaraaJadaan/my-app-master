@@ -1,8 +1,9 @@
-import {useParams} from "react-router-dom";
+// import {useParams} from "react-router-dom";
 import NavBar from '../components/NavBar';
 import Announcement from "../components/Announcement";
 import Details from '../components/Details';
 import Reviews from '../components/Reviews';
+import Footer from "../components/Footer";
 import React from 'react'
 
 export default function ProductPage() {
@@ -15,6 +16,7 @@ export default function ProductPage() {
       <Announcement />
       <Details/>
       <Reviews/>
+      <Footer />
     </div>
   )
 }

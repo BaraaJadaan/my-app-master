@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Water Brush';
     src: url('../../assets/fonts/WaterBrush-Regular.ttf');
     
@@ -8,7 +8,7 @@
     font-family: 'Bangers';
     src: url('../../assets/fonts/Bangers-Regular.ttf');
 
-}
+} */
 @font-face {
   
     font-family: 'Helvetica Neue';
@@ -21,7 +21,7 @@
     src: url('../../assets/fonts/Triforce-y07d.ttf');
 
 }
-@font-face {
+/* @font-face {
 
     font-family: 'La Belle Aurore';
     src: url('../../assets/fonts/LaBelleAurore.woff2'),
@@ -46,25 +46,27 @@
     font-family: 'Bangers';
     font-size: x-large;
     font-style:normal;
-}
-.font3 {
+} */
+/* .font3 {
     font-family: 'Helvetica Neue';
     font-weight: normal;
     font-style: normal;
     font-size: x-large;
   }
-  
-  .font4 {
+   */
+  /* .font4 {
     font-family: 'La Belle Aurore';
     font-weight: normal;
     font-style: normal;
     font-size: x-large;
   }
-  
+   */
   .font5 {
     font-family:'Triforce';
-    font-weight:normal;
+    color:white;
+    font-weight:500;
     font-style: normal;
-    font-size:xx-large;
-    transform: translate(480px, 0px);
+    margin: 0;
+    font-size:35px;
+    transform: translate(15ch, 0ch);
   }

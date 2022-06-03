@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Footer from "./Footer";
 import NavBar from "./NavBar";
 import Rating from '@mui/material/Rating';
 import Tooltip from '@mui/material/Tooltip';
@@ -85,7 +84,6 @@ const value= '5'
 const Product = () => {
   return (
     <Container>
-      <NavBar />
       <Wrapper>
         <ImgContainer>
           <Image src="https://i.ibb.co/19TYCy3/10160855-preview-rev-1.png"/>
@@ -99,14 +97,13 @@ const Product = () => {
           <Rating style={{paddingTop: '14px'}} name="read-only" value={value}  readOnly />
           <FilterContainer>
           <Price onInput={e => console.log(e.currentTarget.textContent)} contentEditable={true}>{price}</Price>
+          </FilterContainer>
           <Tooltip TransitionComponent={Zoom} title="Add to Cart">
             <Button><ShoppingCartRoundedIcon style={{transform: 'translate(0px, 3px)'}}/></Button>
           </Tooltip>
-          </FilterContainer>
           
         </InfoContainer>
       </Wrapper>
-      <Footer />
     </Container>
   );
 };

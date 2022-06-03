@@ -5,7 +5,6 @@ import CategoryCard from "../components/CategoryCard";
 import SmlCtgCrds from "../components/SmlCtgCrds";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
-import Grid from '@mui/material/Grid';
 import Announcement from '../components/Announcement';
 
 
