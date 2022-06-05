@@ -96,7 +96,7 @@ const Cart = ({cartItems,onAdd,onRemove}) => {
   const totalPrice = itemsPrice + taxPrice ;
   return (
     <Container>
-      {/* <Navbar/> */}
+      <Navbar/>
       <Announcement/>
       <Wrapper>
         <Top>
