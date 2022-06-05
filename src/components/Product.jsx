@@ -88,7 +88,7 @@ const Icon = styled.div`
   }
 `;
 
-const Product = ({ item }) => {
+const Product = ({ item,onAdd }) => {
   const [value, setValue] = useState(2);
 
   return (
@@ -121,7 +121,7 @@ const Product = ({ item }) => {
               </WrappName>
               <IconsWrapper>
                 <Icon>
-                  <ShoppingCartCheckoutOutlined />
+                  <ShoppingCartCheckoutOutlined onClick={() => onAdd(item)} />
                 </Icon>
               </IconsWrapper>
             </Info>

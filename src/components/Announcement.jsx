@@ -8,9 +8,9 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  font-weight: 900;
-  font-size: large;
-  margin-top: 64px;
+  font-weight: 400;
+  font-size: medium;
+  /* margin-top: 64px; */
 `;
 
 const Announcement = () => {

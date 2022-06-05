@@ -1,5 +1,5 @@
 import {useParams} from "react-router-dom";
-import NavBar from '../components/NavBar';
+// import NavBar from '../components/NavBar';
 import Announcement from "../components/Announcement";
 import Details from '../components/Details';
 import Reviews from '../components/Reviews';
@@ -11,7 +11,7 @@ export default function ProductPage() {
 
     <div className="title">
       {/* ProductPage - {id} */}
-      <NavBar/>
+      {/* <NavBar/> */}
       <Announcement />
       <Details/>
       <Reviews/>

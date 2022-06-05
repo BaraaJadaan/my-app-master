@@ -8,7 +8,7 @@ const Container = styled.div`
 padding: 30px;
   
 `;
-const Products = () => {
+const Products = ({onAdd}) => {
   return (
     <Container>
       <h1 className="t2">Featured Products</h1>
@@ -16,7 +16,7 @@ const Products = () => {
         {popularProducts.map((item) => (
           <Grid item xs={3}>
             <Fade bottom>
-              <Product item={item} key={item.id} />
+              <Product onAdd={onAdd} item={item} key={item.id} />
             </Fade>
           </Grid>
         ))}

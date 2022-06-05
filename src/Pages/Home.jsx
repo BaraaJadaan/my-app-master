@@ -7,17 +7,19 @@ import Products from "../components/Products";
 import Footer from "../components/Footer";
 import Grid from '@mui/material/Grid';
 import Announcement from '../components/Announcement';
+import ActionButton from '../components/ActionButton';
 
-
-export default function Home() {
+export default function Home({onAdd}) {
   return (
     <div>
         <NavBar/>
         <Announcement/>
         <Slider/>
+
         <SmlCtgCrds/>
         <CategoryCard/>
-        <Products/>
+        <ActionButton/>
+        <Products />
         <Footer/>
      
     </div>
