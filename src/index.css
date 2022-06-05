@@ -1,0 +1,22 @@
+html {
+  font-size: 100%;
+}
+
+body {
+ 
+  margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f1f1f0;
+  overflow-x: hidden;
+  display: block;
+
+}
+
+::selection{
+  color:white;
+  background-color: indigo;
+}
+
